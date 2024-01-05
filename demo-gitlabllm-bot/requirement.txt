@@ -1,0 +1,3 @@
+fastapi
+tree_sitter
+uvicorn==0.16.0

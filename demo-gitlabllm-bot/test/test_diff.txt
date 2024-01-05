@@ -1,0 +1,10 @@
+@@ -20,7 +20,7 @@    public void shouldBuildNativeImage() throws Exception {
+        final File projectDir = getProjectDir("basic-java-native-module");
+
+-        final BuildResult build = runGradleWrapper(projectDir, "clean", "buildNative", "-Dquarkus.package.type=fast-jar");
++        final BuildResult build = runGradleWrapper(projectDir, "clean", "buildNative");
+
+        assertThat(build.getTasks().get(":quarkusBuild")).isEqualTo(BuildResult.SUCCESS_OUTCOME);
+        final String buildOutput = build.getOutput();
+
+
